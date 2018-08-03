@@ -50,6 +50,54 @@ I've been using Ubuntu 16.04 LTS and recently had success upgrading to 18.04 LTS
 
 Head on over to the Microsoft Store (hit that **Windows** key again and search for `Microsoft Store`, hit enter). Search for `Linux` or `Ubuntu`, and install one of them.
 
+### Step 4: Create your user
+
+Open Ubuntu by hitting that **Windows** key again and typing in `ubuntu`. You should be prompted to create a user. I believe a default `root` user is created that is automatically logged in when you open your `bash` terminal.
+
+If you do decide to create a new you 💁, pick a one-word, all lower-case username and any password you will remember (or the same one you use for Windows).
+
+### Step 5: Update Ubuntu
+
+```shell
+sudo apt update && sudo apt -y upgrade
+```
+
+The `-y` flag here auto affirms upgrades to the installation.
+
+Hit enter and ☕️ or 🚶 or 😴
+
+### Step 6: Install essential build tools
+
+```shell
+sudo apt install -y build-essential
+```
+
+These are essential for development, right?
+
+### Step 7: Install `n, node, npm`
+
+We will be using `n`, a robust and capable node version manager, via [n-install](https://github.com/mklement0/n-install). This will also install LTS versions of node and npm.
+
+```shell
+curl -L https://git.io/n-install | bash
+```
+
+restart the terminal and type `node -v && npm -v`, **smash** that enter key, and behold the node and npm versions.
+
+### Step 8: Install `yarn` (optional)
+
+I generally prefer `yarn`, even though `npm` has made some significant improvements in speed lately. However, the way they build dependencies is different and I more often have trouble with `npm`, so get `yarn`!
+
+```shell
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+yarn -v
+```
+
+### Step 9: Next steps
+
+Check out these other ways to make your dev experience better!
+
 ## Just the steps
 
 - Open Powershell as Administrator
