@@ -3,6 +3,7 @@ module.exports = {
   description: "Where Pheep writes about learning stuff",
   themeConfig: {
     nav: [{ text: "Home", link: "/" }, { text: "WSL", link: "/WSL/" }],
-    lastUpdated: "Last Updated" // string | boolean
+    lastUpdated: "Last Updated",
+    subnav: true,
   }
 };

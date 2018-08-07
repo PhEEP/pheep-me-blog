@@ -1,3 +1,4 @@
 # WSL (Windows Subsystem Linux)
 
-[Setup](./wsl.md)
+- [Setup](./setup.md)
+- [Terminal](./terminal.md)
