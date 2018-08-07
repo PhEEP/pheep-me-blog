@@ -1,16 +1,22 @@
-# So you want to web dev on Windows
+# Delightful web development on Windows with WSL
 
-Anyone ever told you you can't be a _real_ web developer on a PC? Maybe you want to get started but feel gimped by the price of a Macbook? Maybe you are already a gamer, have a sweet rig and don't want to buy a separate computer?
+So you do your web development on a PC and it's working just fine. You can run Node and NPM from your terminal and you're slinging JavaScript like a pro. But wait, why doesn't this work as expected? Oh, that's right, this isn't `bash`...
 
-Windows Subsystem Linux (WSL) to the rescue!
+**Windows Subsystem Linux (WSL) to the rescue!**
+
+Let's get set up to dev from our Windows machine.
 
 Just want the steps? [Skip to the end](#just-the-steps)
 
 ## Assumptions
 
-- Windows 10 Fall Creators Update
-- You can interact with your computer
-- Sense of humor optional
+- Windows 10 Fall Creators Update or later
+- Some basic terminal knowledge
+- A sense of adventure
+
+## Caveats
+
+I've experienced some strange behavior when I've had multiple instances of certain packages. Unless you know how to link to the right `node` package from the `ubuntu bash` it's probably best to clean out `node/npm/yarn` from the Windows side of things. By the end of this, the only Windows apps you'll need to do any dev are GUIs like [VSCodeTODO](https:#), [Git for Windows TODO](https:#), and maybe a DB GUI like [PG Admin TODO](https://#).
 
 ## Installation
 
@@ -24,7 +30,7 @@ Open up Powershell as an administrator. If you've never done that, follow these 
 
 - Press the **Windows** key
 - Type **Powershell**
-- Right-click **Powershell**
+- Right-click **Windows Powershell**
 - Select **Run as Administrator**
 - Click **Yes** when prompted
 
@@ -56,13 +62,17 @@ Open Ubuntu by hitting that **Windows** key again and typing in `ubuntu`. You sh
 
 If you do decide to create a new you 💁, pick a one-word, all lower-case username and any password you will remember (or the same one you use for Windows).
 
-### Step 5: Update Ubuntu
+There is also a general `ubuntu` install available in the Microsoft Store, I'm not sure which version that installs. If you chose that route, you can find out what you have installed by typing `lsb_release -a` into your `bash` terminal after install. You should see something like this.
+
+![Ubuntu version](../assets/lsb_release.jpg)
+
+### Step 5: Update packages
 
 ```shell
 sudo apt update && sudo apt -y upgrade
 ```
 
-The `-y` flag here auto affirms upgrades to the installation.
+The `-y` flag here auto affirms upgrades to the installation. `sudo` is an indication that you are acting as the administrator in this shell. If you attached a password to your user you will have to enter it after each `sudo`, I believe.
 
 Hit enter and ☕️ or 🚶 or 😴
 
@@ -77,6 +87,8 @@ These are essential for development, right?
 ### Step 7: Install `n, node, npm`
 
 We will be using `n`, a robust and capable node version manager, via [n-install](https://github.com/mklement0/n-install). This will also install LTS versions of node and npm.
+
+To install any version of `node`, type `n <node_version>`, e.g. for version 9.6.1 I would type `n 9.6.1`. Typing `n` and hitting Enter will show you all your available node installs. Navigate with the up/down arrows and select one by hitting Enter.
 
 ```shell
 curl -L https://git.io/n-install | bash
@@ -96,7 +108,11 @@ yarn -v
 
 ### Step 9: Next steps
 
-Check out these other ways to make your dev experience better!
+That's it for a basic setup. Install all your favorite packages in your WSL instance and have fun!
+
+Check out these other topics to customize and streamline your new, WSL-powered dev experience.
+
+- Terminal Emulator with [Hyper.js](https://hyper.is) and [Fish, the Friendly Interactive Shell](https://)
 
 ## Just the steps
 
