@@ -40,7 +40,7 @@ You should see something like this (ignore the `ssh` stuff there, I'll figure th
 
 Once you have an administrator-powered Powershell terminal open, paste the following command in and run it:
 
-```shell
+```bash
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
@@ -68,7 +68,7 @@ There is also a general `ubuntu` install available in the Microsoft Store, I'm n
 
 ### Step 5: Update packages
 
-```shell
+```bash
 sudo apt update && sudo apt -y upgrade
 ```
 
@@ -78,7 +78,7 @@ Hit enter and ☕️ or 🚶 or 😴
 
 ### Step 6: Install essential build tools
 
-```shell
+```bash
 sudo apt install -y build-essential
 ```
 
@@ -90,7 +90,7 @@ We will be using `n`, a robust and capable node version manager, via [n-install]
 
 To install any version of `node`, type `n <node_version>`, e.g. for version 9.6.1 I would type `n 9.6.1`. Typing `n` and hitting Enter will show you all your available node installs. Navigate with the up/down arrows and select one by hitting Enter.
 
-```shell
+```bash
 curl -L https://git.io/n-install | bash
 ```
 
@@ -100,7 +100,7 @@ restart the terminal and type `node -v && npm -v`, **smash** that enter key, and
 
 I generally prefer `yarn`, even though `npm` has made some significant improvements in speed lately. However, the way they build dependencies is different and I more often have trouble with `npm`, so get `yarn`!
 
-```shell
+```bash
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 yarn -v
@@ -119,7 +119,7 @@ Check out these other topics to customize and streamline your new, WSL-powered d
 - Open Powershell as Administrator
 - Enable WSL
 
-```shell
+```bash
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
@@ -130,7 +130,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
   - I'm not exactly sure of any consequences here
 - Scripts 👇, do them
 
-```shell
+```bash
 sudo apt update && sudo apt -y upgrade
 # ... ☕️
 # Get essential build tools
