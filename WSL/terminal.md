@@ -7,7 +7,7 @@ Do you...
 
 Let's go for #2!
 
-## Hyper.js
+## Hyper.js 🌩
 
 Head over to [Hyper.js](https://hyper.is) and get yourself the latest version. Download and install it, then open that bad boy and let's make some changes.
 
@@ -19,6 +19,15 @@ Make sure your `shell` option is set as follows:
 shell: 'C:\\Windows\\System32\\bash.exe',
 ```
 
+While you're in the settings, change the font-size and font to your preference. I'm currently using the following:
+
+```js
+fontSize: 14,
+fontFamily: "Dank Mono, Menlo, etc.",
+```
+
+[Dank Mono](https://dank.sh) is an amazing typeface for code, it has great weighting, lovely design, and ligature support. It does cost 💷40, so if you need an alternative I have also liked `Fira Code`.
+
 ### Theme
 
 The default theme is pretty good, but there are so many to choose from! You can browse Hyper.js site or just install the `Night Owl` theme (it's gorgeous, clean, and looks great at the wee hours of the night).
@@ -29,7 +38,7 @@ The default theme is pretty good, but there are so many to choose from! You can 
 - close and reopen your Hyper terminal to see the changes
 - 😿 openly
 
-## Fish
+## Fish 🐟
 
 You may have heard of Zsh, or Z Shell. It's great and all, but I've fallen in love with Fish. Where `zsh` needed plugins for autocomplete and smart suggestions, Fish gets those right off the bat. It's also proven to be a bit snappier, especially with the right theme (some themes are craaaaaaaaaaazy slow...).
 
@@ -39,10 +48,12 @@ commands to install fish
 # Install oh-my-fish
 commands to install omf
 # Get that simple-ass-prompt
-omf import simple-ass-prompt
+omf theme simple-ass-prompt
 ```
 
-## Set fish as the terminal to run on `bash init`
+`simple-ass-prompt` has by far been my favorite theme to use with fish. It gives all the information I need to know about which use I am, what path I'm on, and just enough `git` information to guide me. There are, of course, others and you are most welcome to try them, `omf theme` will list them out.
+
+### Set fish as the terminal to run on `bash init`
 
 I use `nano` to edit `~/.bashrc`, if you know VIM, more power to you.
 
