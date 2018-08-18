@@ -16,7 +16,7 @@ Just want the steps? [Skip to the end](#just-the-steps)
 
 ## Caveats
 
-I've experienced some strange behavior when I've had multiple instances of certain packages. Unless you know how to link to the right `node` package from the `ubuntu bash` it's probably best to clean out `node/npm/yarn` from the Windows side of things. By the end of this, the only Windows apps you'll need to do any dev are GUIs like [VSCodeTODO](https:#), [Git for Windows TODO](https:#), and maybe a DB GUI like [PG Admin TODO](https://#).
+I've experienced some strange behavior when I've had multiple instances of certain packages. Unless you know how to link to the right `node` package from the `ubuntu bash` it's probably best to clean out `node/npm/yarn` from the Windows side of things. By the end of this, the only Windows apps you'll need to do any dev are GUIs like [VSCode](https://code.visualstudio.com/), [Git for Windows](https://git-scm.com/download/win), and maybe a DB GUI like [PG Admin](https://www.pgadmin.org/).
 
 ## Installation
 
@@ -33,10 +33,6 @@ Open up Powershell as an administrator. If you've never done that, follow these 
 - Right-click **Windows Powershell**
 - Select **Run as Administrator**
 - Click **Yes** when prompted
-
-You should see something like this (ignore the `ssh` stuff there, I'll figure that out later...)
-
-![Powershell](../assets/powershell.jpg)
 
 Once you have an administrator-powered Powershell terminal open, paste the following command in and run it:
 
