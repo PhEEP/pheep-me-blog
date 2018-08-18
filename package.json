@@ -1,10 +1,13 @@
 {
-  "name": "Pheep-Devs-Blog",
+  "name": "pheep-devs-blog",
   "version": "1.0.0",
   "description": "Where Pheep documents his dev processes, environments, and opinions",
   "main": "Readme.md",
   "repository": "git@github.com:PhEEP/pheep-me-blog.git",
   "author": "PhEEP <philippealmoore@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "docs:build": "vuepress build docs"
+  }
 }
