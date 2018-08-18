@@ -1,4 +1,4 @@
-# VSCode, it's what I use
+# VSCode, editor of choice 🔫
 
 You're likely to have a preference already on how your code editor works and looks for you. Either click the link or search the extension (`ctl + shift + x`) and type what is after the link, e.g. `sdras.night-owl`
 
