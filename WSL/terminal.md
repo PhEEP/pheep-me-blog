@@ -51,7 +51,7 @@ commands to install omf
 omf theme simple-ass-prompt
 ```
 
-`simple-ass-prompt` has by far been my favorite theme to use with fish. It gives all the information I need to know about which use I am, what path I'm on, and just enough `git` information to guide me. There are, of course, others and you are most welcome to try them, `omf theme` will list them out.
+`simple-ass-prompt` is a great theme to start out with. It gives you good information on where you are in your directory and just enough `git` insight to keep you from committing work to the wrong branch. There are, of course, others and you are most welcome to try them, `omf theme` will list them out and `omf install <theme>` to install. The one I'm currently using is `slavic-cat`, a variation on `toaster` with a more proletarian vibe ⚒.
 
 ### Set fish as the terminal to run on `bash init`
 
