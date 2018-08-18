@@ -1,5 +1,7 @@
 # WSL (Windows Subsystem Linux)
 
+This is part one in the documentation of my dev setup. Major props go out to all the resources I've used to get to this point. This particular guide draws heavily from [Scott Spence's](https://github.com/spences10) lovely article [Automating your Windows Subsystem Linux Setup](https://medium.freecodecamp.org/automating-your-windows-subsystem-linux-setup-df4c9a7b0e7b)
+
 So you do your web development on a PC and it's working just fine. You can run Node and NPM from your terminal and you're slinging JavaScript like a pro. But wait, why doesn't this work as expected? Oh, that's right, this isn't `bash`...
 
 **Windows Subsystem Linux (WSL) to the rescue!**
