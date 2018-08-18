@@ -1,5 +1,7 @@
 # Make that terminal shine 🌟
 
+Make sure you've set up [WSL](/WSL/) first.
+
 Do you...
 
 1.  like the way the default `ubuntu` terminal looks or

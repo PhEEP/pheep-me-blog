@@ -4,8 +4,9 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
+      { text: "VSCode", link: "/VSCode/" },
       { text: "WSL", link: "/WSL/" },
-      { text: "VSCode", link: "/VSCode/" }
+      { text: "Terminal", link: "/Terminal/" }
     ],
     sidebar: "auto",
     lastUpdated: "Last Updated",
