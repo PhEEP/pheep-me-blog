@@ -9,6 +9,9 @@ module.exports = {
     ],
     sidebar: "auto",
     lastUpdated: "Last Updated",
-    displayAllHeaders: true
+    displayAllHeaders: true,
+    serviceWorker: {
+      updatePopup: true
+    }
   }
 };
