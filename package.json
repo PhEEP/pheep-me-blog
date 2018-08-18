@@ -9,5 +9,8 @@
   "private": false,
   "scripts": {
     "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress": "0.14.2"
   }
 }
