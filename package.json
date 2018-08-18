@@ -11,6 +11,6 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "vuepress": "latest"
+    "vuepress": "0.14.2"
   }
 }
