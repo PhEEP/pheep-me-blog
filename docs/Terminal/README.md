@@ -11,7 +11,7 @@ Let's go for #2!
 
 ## Hyper.js 🌩
 
-Head over to [Hyper.js](https://hyper.is) and get yourself the latest version. Download and install it, then open that bad boy and let's make some changes.
+Head over to [Hyper.js](https://hyper.is/#installation) and get yourself the latest version. Download and install it, then open that bad boy and let's make some changes. (`choco install hyper` works as well, but their package wasn't up to the _2.0_ version yet last time I checked).
 
 Once the terminal is open, hit `ctl + ,` to open `.hyper.js`. First things first we need to confirm that `bash` will launch on startup.
 
@@ -42,20 +42,54 @@ The default theme is pretty good, but there are so many to choose from! You can 
 
 ## Fish 🐟
 
+[Fish](https://github.com/fish-shell/fish-shell)
+
 You may have heard of Zsh, or Z Shell. It's great and all, but I've fallen in love with Fish. Where `zsh` needed plugins for autocomplete and smart suggestions, Fish gets those right off the bat. It's also proven to be a bit snappier, especially with the right theme (some themes are craaaaaaaaaaazy slow...).
 
 ```bash
 # Install Fish
-commands to install fish
+sudo apt install fish
+# If for some strange reason that doesn't work, give this a try
+sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-get update
+sudo apt-get install fish
+```
+
+## oh-my-fish (omf) 🍥
+
+[oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
+
+> Oh My Fish provides core infrastructure to allow you to install packages which extend or modify the look of your shell. It's fast, extensible and easy to use.
+
+It's what you use to extend Fish and it works real good 🤷‍♂
+
+```bash
 # Install oh-my-fish
-commands to install omf
+curl -L https://get.oh-my.fish | fish
 # Get that simple-ass-prompt
-omf theme simple-ass-prompt
+omf install simple-ass-prompt
+# Or, if you're feeling sassy, slavic-cat
+omf install slavic-cat
+# view currently installed themes and a list of available ones
+omf theme
+# get help
+omf -h
 ```
 
 `simple-ass-prompt` is a great theme to start out with. It gives you good information on where you are in your directory and just enough `git` insight to keep you from committing work to the wrong branch. There are, of course, others and you are most welcome to try them, `omf theme` will list them out and `omf install <theme>` to install. The one I'm currently using is `slavic-cat`, a variation on `toaster` with a more proletarian vibe ⚒.
 
-### Set fish as the terminal to run on `bash init`
+I have, in the course of installing many themes, encountered an error informing me that a config is overwriting some theme. Run `omf doctor` and follow the on-screen instructions. Most often the output includes the following:
+
+```bash
+Warning: fish_prompt.fish is overridden.
+  fish_config command persists the prompt to ~/.config/fish/functions/fish_prompt.fish
+  That file takes precedence over Oh My Fish\'s themes. Remove the file to fix it:
+  rm ~/.config/fish/functions/fish_prompt.fish
+```
+
+`rm ~/.config/fish/functions/fish_prompt.fish` in your terminal will fix this.
+
+## `exec fish` on bash init
 
 I use `nano` to edit `~/.bashrc`, if you know VIM, more power to you.
 
