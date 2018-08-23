@@ -7,7 +7,7 @@ Do you...
 1.  like the way the default `ubuntu` terminal looks or
 2.  would you rather have a snazzy terminal your cyberpunk friends would drool over?
 
-![Vaporwave Terminal 🌆](/docs/.vuepress/public/git_lg_terminal.jpg)
+![Vaporwave Terminal 🌆](./git_lg_terminal.jpg)
 
 Let's go for #2!
 
