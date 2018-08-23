@@ -1,6 +1,7 @@
 module.exports = {
   title: "Pheep Devs",
   description: "Where Pheep writes about learning stuff",
+  serviceWorker: true,
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
