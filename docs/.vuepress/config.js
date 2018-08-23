@@ -12,7 +12,10 @@ module.exports = {
     lastUpdated: "Last Updated",
     displayAllHeaders: true,
     serviceWorker: {
-      updatePopup: true
+      updatePopup: {
+        message: "Hot off the presses, fresh content!",
+        buttonText: "Gimme!"
+      }
     }
   }
 };
