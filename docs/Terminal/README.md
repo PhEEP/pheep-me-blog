@@ -9,6 +9,8 @@ Do you...
 
 ![Vaporwave Terminal 🌆](./git_lg_terminal.jpg)
 
+<AppImage :image="./git_lg_terminal.jpg"/>
+
 Let's go for #2!
 
 ## Hyper.js 🌩
