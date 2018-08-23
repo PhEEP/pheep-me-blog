@@ -11,7 +11,9 @@ Let's go for #2!
 
 ## Hyper.js 🌩
 
-Head over to [Hyper.js](https://hyper.is/#installation) and get yourself the latest version. Download and install it, then open that bad boy and let's make some changes. (`choco install hyper` works as well, but their package wasn't up to the _2.0_ version yet last time I checked).
+Head over to [Hyper.js](https://hyper.is/#installation) and get yourself the latest version. Download and install it, then open that bad boy and let's make some changes. If you're already using [`chocolatey`](https://chocolatey.org/install) then `choco install hyper` works as well, and the package is at the _2.0_ version!.
+
+**N.B** If you want to use Chocolatey, you'll be in Powershell, not the Ubuntu terminal.
 
 Once the terminal is open, hit `ctl + ,` to open `.hyper.js`. First things first we need to confirm that `bash` will launch on startup.
 
@@ -28,7 +30,15 @@ fontSize: 14,
 fontFamily: "Dank Mono, Menlo, etc.",
 ```
 
-[Dank Mono](https://dank.sh) is an amazing typeface for code, it has great weighting, lovely design, and ligature support. It does cost 💷40, so if you need an alternative I have also liked `Fira Code`.
+### Hyper keybinds
+
+- Split terminal horizontally: `ctl + shift + e`
+- Split terminal vertically: `ctl + shift + d`
+  - The above are both relative to the position of your cursor, so you can have one wide pane on top of two smaller ones
+
+## [Dank Mono](https://dank.sh)
+
+Dank Mono is an amazing typeface for code, it has great weight, delightul cursive interjecdtions, and fluid ligatures. If you can't afford the 💷40 pounds (definitely worth it if you can), a great alternative is [`Fira Code`](https://github.com/tonsky/FiraCode), `choco install firacode`.
 
 ### Theme
 
@@ -40,11 +50,13 @@ The default theme is pretty good, but there are so many to choose from! You can 
 - close and reopen your Hyper terminal to see the changes
 - 😿 openly
 
+Browse themes [here](https://hyper.is/themes) to find one that works for you. I also use `hyper-solarized-light` when I'm outside or in a room that is too bright.
+
 ## Fish 🐟
 
 [Fish](https://github.com/fish-shell/fish-shell)
 
-You may have heard of Zsh, or Z Shell. It's great and all, but I've fallen in love with Fish. Where `zsh` needed plugins for autocomplete and smart suggestions, Fish gets those right off the bat. It's also proven to be a bit snappier, especially with the right theme (some themes are craaaaaaaaaaazy slow...).
+You may have heard of Zsh, or Z Shell. It's great and all, but I've fallen in love with Fish. Where `zsh` needed plugins for autocomplete and smart suggestions, Fish gets those right off the bat. It's also proven to be a bit snappier, especially with the right theme (some themes are a tad sluggish...).
 
 ```bash
 # Install Fish
@@ -54,6 +66,8 @@ sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
 sudo apt-get install fish
 ```
+
+**N.B.** You should be able to use `sudo apt` for all your installing. `apt` is a revamped version of the `apt-get` package manager for Ubuntu that gained popularity with Ubuntu `16.04`. There are some great explanations at [askubuntu](https://askubuntu.com/questions/445384/what-is-the-difference-between-apt-and-apt-get) and [itsfoss](https://itsfoss.com/apt-vs-apt-get-difference/).
 
 ## oh-my-fish (omf) 🍥
 
@@ -76,9 +90,11 @@ omf theme
 omf -h
 ```
 
-`simple-ass-prompt` is a great theme to start out with. It gives you good information on where you are in your directory and just enough `git` insight to keep you from committing work to the wrong branch. There are, of course, others and you are most welcome to try them, `omf theme` will list them out and `omf install <theme>` to install. The one I'm currently using is `slavic-cat`, a variation on `toaster` with a more proletarian vibe ⚒.
+`simple-ass-prompt` is a great theme to start out with. It gives you good information on where you are in your directory and just enough `git` insight to keep you from committing work to the wrong branch. There are, of course, others and you are most welcome to try them. `omf theme` will list them out and `omf install <theme>` will install the chosen `<theme>`.
 
-I have, in the course of installing many themes, encountered an error informing me that a config is overwriting some theme. Run `omf doctor` and follow the on-screen instructions. Most often the output includes the following:
+I'm currently enjoying `slavic-cat`, a variation on `toaster` with a more proletarian vibe 😹⚒.
+
+**N.B.** In the course of testing themes, you may encounter an error informing you that a config is overwriting some theme. Run `omf doctor` and follow the on-screen instructions. Most often the output includes the following:
 
 ```bash
 Warning: fish_prompt.fish is overridden.
