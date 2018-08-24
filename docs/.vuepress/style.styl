@@ -1,14 +1,14 @@
 @import './override';
-    .image-frame
+    .imageFrame
         border-style: inset
         border-color: $accentColor
         border-width: 10px
-        &.vaporwave
-            animation: filter-animation 5s infinite;
-        .image-inner-frame
+        .imageInnerFrame
             border-style: outset
             border-color: $accentColor
             border-width: 10px
+    .vaporWave
+        animation: filter-animation 5s infinite;
     @keyframes filter-animation {
         0% {
             filter: sepia(0) saturate(2);

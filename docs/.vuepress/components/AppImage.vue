@@ -1,8 +1,8 @@
 <template>
-    <div :class="imageFrame">
-        <div :class="imageInnerFrame">
+    <div :class="{imageFrame, vaporWave}">
+        <div :class="{imageInnerFrame}">
             <img :src="image" />
-            <button @click="vaporWaving = !vaporWaving">Vaporwave me</button>
+            <button @click.prevent="toggleVaporWave()">Vaporwave me</button>
             <div v-if="caption">
                 {{ caption }}
             </div>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  data: function() {
+  data() {
     return {
       bordered: true,
       vaporWaving: false,
@@ -20,15 +20,15 @@ export default {
   },
   methods: {
     toggleVaporWave: function() {
-      return (this.vaporWaving = !this.vaporWaving);
+      this.vaporWaving = !this.vaporWaving;
     },
   },
   computed: {
     imageFrame: function() {
-      return this.bordered && 'image-frame';
+      return this.bordered && 'imageFrame';
     },
     imageInnerFrame: function() {
-      return this.bordered && 'image-inner-frame';
+      return this.bordered && 'imageInnerFrame';
     },
     vaporWave: function() {
       return this.vaporWaving && 'vapor-wave';
