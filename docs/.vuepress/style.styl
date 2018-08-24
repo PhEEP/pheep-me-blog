@@ -1,8 +1,24 @@
-// @import './override';
-// body, .navbar, .sidebar
-//   background: darken($textColor, 50%)
-//   color: lighten($textColor, 75%)
-//   .site-name
-//     color: lighten($textColor, 75%)
-// .nav-links a.router-link-active
-//     color: lighten($textColor, 75%)
+@import './override';
+    .image-frame
+        border-style: inset
+        border-color: $accentColor
+        border-width: 10px
+        &.vaporwave
+            animation: filter-animation 5s infinite;
+        .image-inner-frame
+            border-style: outset
+            border-color: $accentColor
+            border-width: 10px
+    @keyframes filter-animation {
+        0% {
+            filter: sepia(0) saturate(2);
+        }
+
+        50% {
+            filter: sepia(1) saturate(8);
+        }
+
+        100% {
+            filter: sepia(0) saturate(2);
+        }
+    }
