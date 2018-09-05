@@ -1,23 +1,23 @@
 module.exports = {
-  title: "Pheep Devs",
-  description: "Where Pheep writes about learning stuff",
+  title: 'Pheep Devs',
+  description: 'Where Pheep writes about learning stuff',
   serviceWorker: true,
   base: '/',
   themeConfig: {
     nav: [
-      { text: "Home", link: "/" },
-      { text: "VSCode", link: "/VSCode/" },
-      { text: "WSL", link: "/WSL/" },
-      { text: "Terminal", link: "/Terminal/" }
+      { text: 'Home', link: '/' },
+      { text: 'VSCode', link: '/VSCode/' },
+      { text: 'WSL', link: '/WSL/' },
+      { text: 'Terminal', link: '/Terminal/' },
     ],
-    sidebar: "auto",
-    lastUpdated: "Last Updated",
+    sidebar: 'auto',
+    lastUpdated: 'Last Updated',
     displayAllHeaders: true,
     serviceWorker: {
       updatePopup: {
-        message: "Hot off the presses, fresh content!",
-        buttonText: "Gimme!"
-      }
-    }
-  }
+        message: 'Hot off the presses, fresh content!',
+        buttonText: 'Gimme!',
+      },
+    },
+  },
 };
