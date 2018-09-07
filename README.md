@@ -6,4 +6,4 @@ Writing down what I've learned so I can remember it later and other people can r
 
 `git push origin master` to trigger deploy
 
-[Pheep.me](https://pheep.me)
+[dev.pheep.me](https://dev.pheep.me)
