@@ -3,6 +3,7 @@ module.exports = {
   description: 'Where Pheep writes about learning stuff',
   serviceWorker: true,
   base: '/',
+  ga: 'UA-15987712-2',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
