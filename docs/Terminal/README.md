@@ -1,15 +1,14 @@
+---
+terminalImage: /git_lg_terminal.jpg
+---
+
 # Make that terminal shine 🌟
 
+::: tip
 Make sure you've set up [WSL](/WSL) first.
+:::
 
-Do you...
-
-1.  like the way the default `ubuntu` terminal looks or
-2.  would you rather have a snazzy terminal your cyberpunk friends would drool over?
-
-![Vaporwave Terminal 🌆](./git_lg_terminal.jpg)
-
-<AppImage :image="./git_lg_terminal.jpg"/>
+<AppImage :image="'/git_lg_terminal.jpg'" :caption="'Cyberpunk/Vaporwave Terminal'"></AppImage>
 
 Let's go for #2!
 
