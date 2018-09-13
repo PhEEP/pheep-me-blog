@@ -10,6 +10,7 @@ module.exports = {
       { text: 'VSCode', link: '/VSCode/' },
       { text: 'WSL', link: '/WSL/' },
       { text: 'Terminal', link: '/Terminal/' },
+      { text: 'Playground', link: '/Playground/' },
     ],
     sidebar: 'auto',
     lastUpdated: 'Last Updated',
