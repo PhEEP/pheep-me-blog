@@ -1,1 +1,3 @@
 # Fun stuff
+
+<GradientPlayground />
