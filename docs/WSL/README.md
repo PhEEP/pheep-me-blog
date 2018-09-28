@@ -113,6 +113,14 @@ Check out these other topics to customize and streamline your new, WSL-powered d
 
 - Terminal Emulator with [Hyper.js](https://hyper.is) and [Fish, the Friendly Interactive Shell](https://)
 
+## Step 10: Windows Defender
+
+Make sure to add `yarn, node, npm` and your dev folder to exceptions in Windows Defender or you'll end up with this...
+
+```
+Done in 902.15s
+```
+
 ## Just the steps
 
 - Open Powershell as Administrator
