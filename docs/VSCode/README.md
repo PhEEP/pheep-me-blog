@@ -166,3 +166,13 @@ indent_size = 2
 [dsznajder.es7-react-js-snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 Follow the link, read the snippets info, wonder where this was everytime you're rewriting boilerplate.
+
+## Fun 🤡 ❗️
+
+Sometimes you just need something to make working a bit easier. Nothing like a 🎁 to brighten up the day.
+
+### `:emojisense:`
+
+[bierner.emojisense](https://marketplace.visualstudio.com/items/itemName=bierner.emojisense)
+
+Intellisense for ✈️ 🍌 🍰 emoji!
